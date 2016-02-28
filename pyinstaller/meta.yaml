@@ -1,0 +1,27 @@
+about: {home: 'http://www.pyinstaller.org', license: GNU General Public License v2
+    (GPLv2), summary: 'Converts (packages) Python programs into stand-alone executables,
+    under Windows, Linux, Mac OS X, AIX and Solaris.'}
+build:
+  entry_points: []
+  features: []
+  string: ''
+  track_features: []
+package: {name: pyinstaller, version: '3.1'}
+requirements:
+  build:
+   - python
+   - pip
+   - distribute
+  conflicts: []
+  run:
+   - python
+   - distribute
+source:
+  fn: pyinstaller-3.1
+  url: https://github.com/pyinstaller/pyinstaller/releases/download/v3.1/PyInstaller-3.1.tar.gz
+  sha256: 5a28c3bb9d23ea644f9dc9e561e66471b83258d44063bcb108dfbbfe4af3c02b
+test:
+  commands: []
+  files: []
+  imports: []
+  requires: []

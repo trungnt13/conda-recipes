@@ -1,0 +1,20 @@
+package:
+  name: bashplotlib
+  version: !!str 0.6.5
+
+source:
+  git_url: git@github.com:trungnt13/bashplotlib.git
+  git_rev: 40ff90b
+
+requirements:
+  build:
+    - python
+    - pip
+
+  run:
+    - python
+
+about:
+  home: https://github.com/glamp/bashplotlib
+  license: MIT
+  summary: plotting in the terminal

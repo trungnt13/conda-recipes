@@ -1,0 +1,55 @@
+package:
+  name: xhtml2pdf
+  version: 0.0.6
+
+source:
+  git_url: git@github.com:xhtml2pdf/xhtml2pdf.git
+  git_rev: fee017f
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+build:
+  noarch_python: False
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pillow
+    - coverage
+    - html5lib
+    - httplib2
+    - nose
+    - pypdf2
+    - reportlab
+  run:
+    - python
+    - setuptools
+    - pillow
+    - coverage
+    - html5lib
+    - httplib2
+    - nose
+    - pypdf2
+    - reportlab
+
+test:
+  imports:
+    - xhtml2pdf
+
+  # commands:
+  #   - py.test
+
+  requires:
+    - pytest
+
+about:
+  home: git@github.com:xhtml2pdf/xhtml2pdf.git
+  license:  Apache License
+  summary: 'xhtml2pdf is a html2pdf converter using the ReportLab Toolkit, the HTML5lib and pyPdf. It supports HTML 5 and CSS 2.1 (and some of CSS 3). It is completely written in pure Python so it is platform independent.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml/configure
