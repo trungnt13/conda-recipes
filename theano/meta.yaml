@@ -1,11 +1,11 @@
 package:
   name: theano
-  version: "0.8.1"
+  version: "0.8.1.1"
 
 source:
   # path: ../Theano
   git_url: git@github.com:Theano/Theano.git
-  git_rev: e088e2a
+  git_rev: d94cdf4
 
 build:
   # noarch_python: True
@@ -65,7 +65,6 @@ test:
     - theano.sparse.sandbox
     - theano.sparse.tests
     - theano.tensor
-    - theano.tensor.deprecated
     - theano.tensor.nnet
     - theano.tensor.nnet.tests
     - theano.tensor.signal
