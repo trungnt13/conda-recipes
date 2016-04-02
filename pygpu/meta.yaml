@@ -18,6 +18,7 @@ requirements:
         - six
         - nose
         - cloog
+        - mpc
 
     run:
         - python
@@ -26,7 +27,6 @@ requirements:
         - cython
         - six
         - nose
-        - cloog
 
 test:
     imports:
