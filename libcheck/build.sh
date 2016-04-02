@@ -28,6 +28,7 @@ else
     export CC=gcc
     export CXX=g++
 
+    export PATH=$PATH:$CONDA_ENV_PATH/bin
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
     export LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
     export CPATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/include
