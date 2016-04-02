@@ -10,7 +10,7 @@ CHECK_MINOR_VERSION=10
 CHECK_MICRO_VERSION=0
 CHECK_VERSION=$CHECK_MAJOR_VERSION.$CHECK_MINOR_VERSION.$CHECK_MICRO_VERSION
 
-# unique source file --- primitive safety check 
+# unique source file --- primitive safety check
 AC_CONFIG_SRCDIR([src/check.c])
 
 # place where extra autoconf macros are kept
@@ -23,9 +23,9 @@ AC_CONFIG_LIBOBJ_DIR([lib])
 AC_CONFIG_AUX_DIR([build-aux])
 
 # really severe build strictness
-AM_INIT_AUTOMAKE([-Wall gnits 1.11.2])
+# AM_INIT_AUTOMAKE([-Wall gnits 1.11.2])
 # Change to using into-in-builddir in the future:
-#AM_INIT_AUTOMAKE([info-in-builddir -Wall -Werror gnits 1.14])
+AM_INIT_AUTOMAKE([info-in-builddir -Wall -Werror gnits 1.14])
 
 # define things like _GNU_SOURCE appropriately
 # From patch 2803433, request system extensions to generate 64-bit safe code
@@ -93,7 +93,7 @@ AC_HELP_STRING([--enable-subunit],
     echo "Subunit support will enable automatically."
     ;;
   *)   AC_MSG_ERROR(bad value ${enableval} for --enable-subunit) ;;
-esac], 
+esac],
 [echo "Subunit support will enable automatically."
  enable_subunit=autodetect])
 
