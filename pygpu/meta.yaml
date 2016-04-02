@@ -7,7 +7,7 @@ source:
     # git_url: git@github.com:Theano/libgpuarray.git
     # git_rev: c59a170
     git_url: git@github.com:trungnt13/libgpuarray.git
-    git_rev: de5adcf
+    git_rev: 43f1b18
 build:
     number: 1
 
