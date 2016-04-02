@@ -18,7 +18,6 @@ requirements:
         - six
         - nose
         - cloog
-        - cmake
 
     run:
         - python
@@ -28,7 +27,6 @@ requirements:
         - six
         - nose
         - cloog
-        - cmake
 
 test:
     imports:
