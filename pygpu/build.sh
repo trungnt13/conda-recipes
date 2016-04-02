@@ -35,7 +35,7 @@ fi
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib:/homeappl/home/trungnt/appl_taito/libs/check-0.10.0/install/lib
 export LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib:/homeappl/home/trungnt/appl_taito/libs/check-0.10.0/install/lib
-export CPATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/include
+export CPATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/include:/homeappl/home/trungnt/appl_taito/libs/check-0.10.0/install/include
 
 cmake .. -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DCMAKE_BUILD_TYPE=Release
 make
