@@ -10,7 +10,6 @@ build:
 
 requirements:
     build:
-        - automake ==1.14
         - cloog ==0.18.0
         - mpc ==1.0.3
 
