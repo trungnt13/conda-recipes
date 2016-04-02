@@ -37,7 +37,7 @@ else
     export CPATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/include
 fi
 
-cmake .. -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DCMAKE_BUILD_TYPE=Release
 make
 make install
 
