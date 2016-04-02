@@ -29,8 +29,8 @@ else
     export CXX=g++
 
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
-    export LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
-    export CPATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/include
+    export LIBRARY_PATH=$LIBRARY_PATH:$CONDA_ENV_PATH/lib
+    export CPATH=$CPATH:$CONDA_ENV_PATH/include
 fi
 
 ./configure --prefix=$INSTALL_DIR --bindir=$CONDA_ENV_PATH/bin
