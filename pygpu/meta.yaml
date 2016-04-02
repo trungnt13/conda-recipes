@@ -18,7 +18,7 @@ requirements:
         - six
         - nose
         - cloog
-        - mpc
+        - mpc=1.0.3
 
     run:
         - python
