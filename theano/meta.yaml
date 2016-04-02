@@ -1,11 +1,11 @@
 package:
   name: theano
-  version: "0.8.1"
+  version: "0.8.2"
 
 source:
   # path: ../Theano
   git_url: git@github.com:Theano/Theano.git
-  git_rev: 7ddf071
+  git_rev: 6399043
 
 build:
   # noarch_python: True
@@ -26,6 +26,7 @@ build:
 requirements:
   build:
     - python
+    - pygpu
     - setuptools
     - numpy >=1.7.1
     - scipy >=0.11
@@ -33,6 +34,7 @@ requirements:
 
   run:
     - python
+    - pygpu
     - setuptools
     - numpy >=1.7.1
     - scipy >=0.11
