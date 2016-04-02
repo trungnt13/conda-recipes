@@ -5,7 +5,7 @@ package:
 source:
   # path: ../Theano
   git_url: git@github.com:Theano/Theano.git
-  git_rev: 9d0c52b
+  git_rev: 7ddf071
 
 build:
   # noarch_python: True
