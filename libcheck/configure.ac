@@ -23,9 +23,9 @@ AC_CONFIG_LIBOBJ_DIR([lib])
 AC_CONFIG_AUX_DIR([build-aux])
 
 # really severe build strictness
-# AM_INIT_AUTOMAKE([-Wall gnits 1.11.2])
+AM_INIT_AUTOMAKE([-Wall gnits 1.11.2])
 # Change to using into-in-builddir in the future:
-# AM_INIT_AUTOMAKE([info-in-builddir -Wall -Werror gnits 1.14])
+#AM_INIT_AUTOMAKE([info-in-builddir -Wall -Werror gnits 1.14])
 
 # define things like _GNU_SOURCE appropriately
 # From patch 2803433, request system extensions to generate 64-bit safe code
