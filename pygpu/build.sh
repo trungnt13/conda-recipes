@@ -11,8 +11,8 @@
 BUILD_DIR=$SRC_DIR/Build
 INSTALL_DIR=$PREFIX
 
-mkdir BUILD_DIR
-cd BUILD_DIR
+mkdir $BUILD_DIR
+cd $BUILD_DIR
 
 ####### for mac ######
 if [ `uname` == Darwin ]; then
