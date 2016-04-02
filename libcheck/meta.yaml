@@ -1,0 +1,20 @@
+
+package:
+    name: libcheck
+    version: 0.10.0
+
+source:
+
+build:
+    number: 1
+
+requirements:
+    build:
+
+    run:
+
+test:
+
+about:
+    home: https://github.com/libcheck/check/blob/master/COPYING.LESSER
+    license: GNU.LESSER
