@@ -22,6 +22,8 @@ if [ `uname` == Darwin ]; then
 ####### for linux #######
 else
     echo "Linux detected!"
+    export CC=gcc
+    export CXX=g++
 fi
 
 cmake .. -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_BUILD_TYPE=Release
