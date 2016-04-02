@@ -4,10 +4,10 @@ package:
     version: 2016.4.1
 
 source:
-    # git_url: git@github.com:Theano/libgpuarray.git
-    # git_rev: c59a170
-    git_url: git@github.com:trungnt13/libgpuarray.git
-    git_rev: de5adcf
+    git_url: git@github.com:Theano/libgpuarray.git
+    git_rev: c59a170
+    # git_url: git@github.com:trungnt13/libgpuarray.git
+    # git_rev: de5adcf
 build:
     number: 1
 
