@@ -31,11 +31,11 @@ else
     echo "Linux detected!"
     export CC=gcc
     export CXX=g++
-
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
-    export LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
-    export CPATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/include
 fi
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
+export LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
+export CPATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/include
 
 cmake .. -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DCMAKE_BUILD_TYPE=Release
 make

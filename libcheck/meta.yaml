@@ -10,7 +10,7 @@ build:
 
 requirements:
     build:
-        - cloog
+        - cloog ==0.18.0
         - mpc ==1.0.3
 
     run:
