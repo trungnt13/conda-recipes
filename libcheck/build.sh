@@ -28,12 +28,12 @@ else
     export CC=gcc
     export CXX=g++
 
-    # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
-    # export LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
-    # export CPATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/include
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
+    export LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
+    export CPATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/include
 fi
 
-./configure --prefix=$INSTALL_DIR --bindir=$CONDA_ENV_PATH/bin --libdir=$CONDA_ENV_PATH/lib --includedir=$CONDA_ENV_PATH/include
+./configure --prefix=$INSTALL_DIR --bindir=$CONDA_ENV_PATH/bin
 
 make
 # ignore the tests
