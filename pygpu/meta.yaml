@@ -21,7 +21,7 @@ requirements:
         - nose
         - cloog ==0.18.0
         - mpc ==1.0.3
-        # - libcheck ==0.10.0
+        - libcheck ==0.10.0
 
     run:
         - python
