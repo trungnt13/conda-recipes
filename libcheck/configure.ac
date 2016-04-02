@@ -23,7 +23,7 @@ AC_CONFIG_LIBOBJ_DIR([lib])
 AC_CONFIG_AUX_DIR([build-aux])
 
 # really severe build strictness
-AM_INIT_AUTOMAKE([-Wall gnits 1.11.2])
+AM_INIT_AUTOMAKE([-Wall gnits 1.11.1])
 # Change to using into-in-builddir in the future:
 #AM_INIT_AUTOMAKE([info-in-builddir -Wall -Werror gnits 1.14])
 
