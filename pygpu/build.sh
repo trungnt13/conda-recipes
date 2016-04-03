@@ -1,22 +1,10 @@
 #!/bin/bash
-# cd <dir>
-# mkdir Build
-# cd Build
-# # you can pass -DCMAKE_INSTALL_PREFIX=/path/to/somewhere to install to an alternate location
-# cmake .. -DCMAKE_BUILD_TYPE=Release # or Debug if you are investigating a crash
-# make
-# make install
-# cd ..
+# If conda cannot find gpuarray/array.h :
+# export CPATH=$CPATH:/path/to/conda/envs/name/include
 
-# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib64/
-# export LIBRARY_PATH=$LIBRARY_PATH:~/.local/lib64/
-# export CPATH=$CPATH:~/.local/include
-# export LIBRARY_PATH=$LIBRARY_PATH:~/.local/lib
-# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib
 
 BUILD_DIR=$SRC_DIR/Build
 INSTALL_DIR=$PREFIX
-CONDA_ENV_PATH=$(conda info -e | grep '*' | tr -s ' ' | cut -d' ' -f3)
 
 mkdir $BUILD_DIR
 cd $BUILD_DIR
@@ -33,10 +21,9 @@ else
     export CXX=g++
 fi
 
-# export PATH=$PATH:$CONDA_ENV_PATH/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_ENV_PATH/lib
-export LIBRARY_PATH=$LIBRARY_PATH:$CONDA_ENV_PATH/lib
-export CPATH=$CPATH:$CONDA_ENV_PATH/include
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PREFIX/lib
+export LIBRARY_PATH=$LIBRARY_PATH:$PREFIX/lib
+export CPATH=$CPATH:$PREFIX/include
 
 cmake .. -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DCMAKE_BUILD_TYPE=Release
 make
