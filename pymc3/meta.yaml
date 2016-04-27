@@ -1,0 +1,42 @@
+
+package:
+    name: pymc3
+    version: 2016.4.27
+
+source:
+    git_url: git@github.com:pymc-devs/pymc3
+    git_rev: ce060fa
+build:
+    number: 1
+
+requirements:
+  build:
+    - python
+    - numpy >=1.7.1
+    - setuptools
+    - scipy >=0.12.0
+    - matplotlib >=1.2.1
+    - pandas >=0.15.0
+    - patsy >=0.4.0
+    - joblib >=0.9
+    - enum34
+    - theano >=0.8.0rc
+  run:
+    - python
+    - numpy >=1.7.1
+    - scipy >=0.12.0
+    - matplotlib >=1.2.1
+    - pandas >=0.15.0
+    - patsy >=0.4.0
+    - joblib >=0.9
+    - enum34
+    - theano >=0.8.0rc
+
+test:
+    imports:
+        - pymc3
+
+about:
+  home: https://github.com/pymc-devs/pymc3
+  license: Apache License, Version 2.0
+  license_file: LICENSE
