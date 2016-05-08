@@ -1,13 +1,13 @@
 
 package:
     name: pygpu
-    version: 2016.4.1
+    version: 2016.5.8
 
 source:
-    # git_url: git@github.com:Theano/libgpuarray.git
-    # git_rev: c59a170
-    git_url: git@github.com:trungnt13/libgpuarray.git
-    git_rev: d6b8404
+    git_url: git@github.com:Theano/libgpuarray.git
+    git_rev: fc36a40
+    # git_url: git@github.com:trungnt13/libgpuarray.git
+    # git_rev: d6b8404
     # de5adcf
 build:
     number: 1
@@ -22,7 +22,7 @@ requirements:
         - nose
         - cloog ==0.18.0
         - mpc ==1.0.3
-        - libcheck ==0.10.0
+        # - libcheck ==0.10.0
 
     run:
         - python
