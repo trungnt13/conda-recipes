@@ -5,7 +5,7 @@ package:
 source:
   # path: ../Theano
   git_url: git@github.com:Theano/Theano.git
-  git_rev: beefa93
+  git_rev: 2a9da88
 
 build:
   # noarch_python: True
@@ -59,8 +59,8 @@ test:
     - theano.sandbox
     - theano.sandbox.cuda
     - theano.sandbox.cuda.tests
-    - theano.sandbox.gpuarray
-    - theano.sandbox.gpuarray.tests
+    - theano.gpuarray
+    - theano.gpuarray.tests
     - theano.sandbox.linalg
     - theano.sandbox.linalg.tests
     - theano.scalar
