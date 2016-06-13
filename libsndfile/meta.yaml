@@ -12,13 +12,13 @@ build:
 	  
 requirements:
   build:
-    - libogg
-    - libvorbis
+#    - libogg
+#    - libvorbis
     - libflac
     - sqlite
   run:
-    - libogg
-    - libvorbis
+#    - libogg
+#    - libvorbis
     - libflac
     - sqlite
 
