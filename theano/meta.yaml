@@ -1,11 +1,11 @@
 package:
   name: theano
-  version: "0.8.2.1"
+  version: "0.8.2.2"
 
 source:
   # path: ../Theano
   git_url: git@github.com:Theano/Theano.git
-  git_rev: 2a9da88
+  git_rev: a668c6c
 
 build:
   # noarch_python: True
