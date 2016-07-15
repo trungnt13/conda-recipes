@@ -1,12 +1,12 @@
 
 package:
     name: pygpu
-    version: 2016.7.2
+    version: 2016.7.15
 
 source:
     # git_url: git@github.com:Theano/libgpuarray.git
     git_url: git@github.com:trungnt13/libgpuarray.git
-    git_rev: 09f6818
+    git_rev: fc5fcfe
 build:
     number: 1
 
@@ -30,9 +30,9 @@ requirements:
         - six
         - nose
 
-test:
-    imports:
-        - pygpu
+# test:
+#     imports:
+#         - pygpu
 
 about:
     home: https://github.com/Theano/libgpuarray/blob/master/LICENSE

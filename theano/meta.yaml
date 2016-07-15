@@ -26,7 +26,6 @@ build:
 requirements:
   build:
     - python
-    - pygpu
     - setuptools
     - numpy >=1.7.1
     - scipy >=0.11
@@ -36,7 +35,6 @@ requirements:
 
   run:
     - python
-    - pygpu
     - setuptools
     - numpy >=1.7.1
     - scipy >=0.11
