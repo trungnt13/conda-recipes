@@ -1,7 +1,13 @@
-about: {home: 'http://www-lium.univ-lemans.fr/sidekit/', license:  LGPL License, summary: 'Open source package for Speaker and Language recognition.'}
+about: {home: 'http://lium.univ-lemans.fr/sidekit', license:  LGPL License, summary: 'Open source package for Speaker and Language recognition.'}
+
 package:
   name: sidekit
-  version: "1.0.1"
+  version: "1.1.2"
+source:
+    # git_url: https://git-lium.univ-lemans.fr/Larcher/sidekit.git
+    # git_rev: a10b1439
+    url: https://pypi.python.org/packages/04/20/8cdf591ed402def334e272ba4aaf9fbf00d168a4d7d1c038b13d2e51308e/SIDEKIT-1.1.2.tar.gz
+    md5: 6706ae25770f65df59729ff7db732eba
 requirements:
   build:
     - python
@@ -11,10 +17,13 @@ requirements:
     - numpy >=1.9.0
     - pyparsing >=2.0.2
     - python-dateutil >=2.2
-    - scipy >=0.12.1
+    - scipy >=0.14.0
     - six >=1.8.0
     - wsgiref >=0.1.2
     - matplotlib >=1.3.1
+    - h5py >=2.3.1
+    - pandas
+    - theano
   run:
     - python
     - mock >=1.0.1
@@ -22,13 +31,13 @@ requirements:
     - numpy >=1.9.0
     - pyparsing >=2.0.2
     - python-dateutil >=2.2
-    - scipy >=0.12.1
+    - scipy >=0.14.0
     - six >=1.8.0
     - wsgiref >=0.1.2
     - matplotlib >=1.3.1
-source:
-  url: ''
-  md5: ''
+    - h5py >=2.3.1
+    - pandas
+    - theano
 test:
   commands: []
   files: []
