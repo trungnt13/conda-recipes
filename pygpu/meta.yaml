@@ -13,14 +13,15 @@ build:
 requirements:
     build:
         - python
-        - numpy
+        - scipy ==0.17.1
+        - numpy ==1.10.4
         - mako
         - cython
         - six
         - nose
         - cloog ==0.18.0
         - mpc ==1.0.3
-        # - libcheck ==0.10.0
+        - mkl ==11.3.3
 
     run:
         - python
