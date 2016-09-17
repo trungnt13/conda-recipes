@@ -1,0 +1,18 @@
+package:
+  name: tk
+  version: 8.6b3
+
+source:
+  fn: tk8.6b3-src.tar.gz
+  url: ftp://ftp.tcl.tk/pub/tcl/tcl8_6/tk8.6b3-src.tar.gz
+
+requirements:
+  build:
+   - python
+
+  run:
+   - python
+
+about:
+  home: https://www.tcl.tk/software/tcltk/license.html
+  license: Tcl/Tk License

@@ -1,0 +1,17 @@
+package:
+  name: libexif
+  version: 0.6.21
+
+source:
+  fn: libexif-0.6.21.tar.gz
+  url: http://heanet.dl.sourceforge.net/project/libexif/libexif/0.6.21/libexif-0.6.21.tar.bz2
+
+requirements:
+    build:
+        #- exif
+
+    run:
+        #- exif
+about:
+  home: https://sourceforge.net/projects/libexif/
+  license: GNU Library or Lesser General Public License version 2.0 (LGPLv2) https://sourceforge.net/directory/license:lgpl/

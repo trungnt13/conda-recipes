@@ -1,0 +1,60 @@
+# Copyright 2016 Peter Williams and collaborators.
+# This file is licensed under a 3-clause BSD license; see LICENSE.txt.
+
+package:
+  name: libvips
+  version: v8.3.2
+
+source:
+  fn: vips-8.3.2.tar.gz
+  url: http://www.vips.ecs.soton.ac.uk/supported/current/vips-8.3.2.tar.gz
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+  script_env:
+    - NJOBS
+
+requirements:
+  build:
+    # - glib 2.43.0
+    - libxml2
+    - zlib
+    - libpng
+    - jpeg
+    - libexif
+    - giflib
+    # - librsvg
+    # - libgsf
+    - libtiff
+    - fftw
+    # - cfitsio
+    - libwebp
+    - gobject-introspection
+    - pygobject3
+    - pango
+    - harfbuzz 1.0.6
+    - libffi
+
+
+  run:
+    - libffi
+    - libxml2
+    - zlib
+    - libpng
+    - jpeg
+    - libexif
+    - giflib
+    # - librsvg
+    # - libgsf
+    - libtiff
+    - fftw
+    # - cfitsio
+    - libwebp
+    - gobject-introspection
+    - pygobject3
+    - pango
+
+about:
+  home: https://github.com/jcupitt/libvips
+  license: GPL https://github.com/jcupitt/libvips/blob/master/COPYING

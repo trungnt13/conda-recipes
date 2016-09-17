@@ -1,0 +1,25 @@
+package:
+  name: snack
+  version: 2.2.10
+
+source:
+  fn: snack2.2.10.tar.gz
+  url: http://www.speech.kth.se/snack/dist/snack2.2.10.tar.gz
+
+requirements:
+  build:
+   - python
+   - cmake
+   - Tkinter
+
+  run:
+   - python
+   - Tkinter
+
+test:
+  imports:
+    - tkSnack
+
+about:
+  home: http://www.speech.kth.se/snack/
+  license: BSD
