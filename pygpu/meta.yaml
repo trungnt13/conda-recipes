@@ -6,7 +6,7 @@ package:
 source:
     # git_url: git@github.com:Theano/libgpuarray.git
     git_url: git@github.com:trungnt13/libgpuarray.git
-    git_rev: fc5fcfe
+    git_rev: d9c5ed4
 build:
     number: 1
 
